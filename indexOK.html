@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
-<body class="p-3 mb-2 bg-info text-white">
+<body>
 	<table class="table table-striped">
 		<script type="text/javascript">
 			numero = prompt("Introduce un número: ");
@@ -15,13 +15,13 @@
 				document.write("Tabla de multiplicar del: " +numero);
 				for(i=0; i<=10; i++) {
 				document.write("<tr><td>"+numero+" x "+i+"="+ numero * i+"</td></tr>");
-			}
+				}
 			} else {
 				
 				window.alert("El valor debe ser un número entre el 1 y el 10");
 			}
 		</script>
 	</table>
-	<button class="text-center" type="button"><a href="indexOK.html">Vuelve a introducir un valor</a> </button>
+	<button type="button"><a href="indexOK.html">Vuelve a introducir un valor</a> </button>
 </body>
 </html>
