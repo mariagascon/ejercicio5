@@ -12,17 +12,17 @@
 		<script type="text/javascript">
 			numero = prompt("Introduce un número: ");
 			
-			if(numero>0 && numero<=10) {
-				document.write("Tabla de multiplicar del: " +numero);
-				for(i=0; i<=10; i++) {
-				document.write("<tr><td>"+numero+" x "+i+"="+ numero * i+"</td></tr>");
+			if(numero>0 && numero<10) { //QUE EL VALOR SEA UN NÚMERO ENTRE EL 1 Y EL 9
+				document.write("Tabla de multiplicar del: " +numero); //TÍTULO TABLA DE MULTIPLICAR + NÚMERO
+				for(i=1; i<=10; i++) { //BUCLE QUE REALIZA LA TABLA DE MULTIPLICAR
+				document.write("<tr><td>"+numero+" x "+i+"="+ numero * i+"</td></tr>"); //CADA UNA DE LAS FILAS DE LA TABLA
 				}
 			} else {
 				
-				window.alert("El valor debe ser un número entre el 1 y el 10");
+				window.alert("El valor debe ser un número entre el 1 y el 9"); //VENTANA SI EL VALOR NO ES UN NÚMERO
 			}
 		</script>
 	</table>
-	<button type="button"><a href="indexOK.html">Vuelve a introducir un valor</a> </button>
+	<button type="button"><a href="indexOK.html">Vuelve a introducir un valor</a> </button> 
 </body>
 </html>
